@@ -6,4 +6,5 @@
 
 canvas {
   background-color: black;
+  position: absolute;
 }
