@@ -7,7 +7,8 @@
   "scripts": {
     "dev": "npm-run-all --parallel dev:ui dev:electron",
     "dev:ui": "vite",
-    "dev:electron": "npm run transpile:electron && cross-env NODE_ENV=development electron .",
+    "dev:electron": "npm run transpile:electron && cross-env NODE_ENV=development RECEIVER_PORT=9000 electron .",
+    "dev:electron:2": "npm run transpile:electron && cross-env NODE_ENV=development RECEIVER_PORT=10000 electron .",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
@@ -17,14 +18,24 @@
     "dist:linux": "npm run transpile:electron && npm run build && electron-builder --linux --x64"
   },
   "dependencies": {
+    "@ant-design/icons": "^6.1.0",
     "@tailwindcss/vite": "^4.1.18",
+    "antd": "^6.1.0",
+    "better-sqlite3": "^12.5.0",
+    "mime-types": "^3.0.2",
+    "os-utils": "^0.0.14",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
-    "tailwindcss": "^4.1.18"
+    "react-router": "^7.10.1",
+    "tailwindcss": "^4.1.18",
+    "zustand": "^5.0.9"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/mime-types": "^3.0.1",
     "@types/node": "^24.10.1",
+    "@types/os-utils": "^0.0.4",
     "@types/react": "^19.2.5",
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^5.1.1",

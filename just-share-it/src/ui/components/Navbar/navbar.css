@@ -1,0 +1,11 @@
+.Navbar {
+  height: 100vh;
+  background: #001529;
+}
+
+.Navbar .ToggleNavbar {
+   display: flex;
+   justify-content: center;
+   padding-top: 1rem;
+}
+

@@ -1,1 +1,9 @@
-@import "tailwindcss";
+@import url(./theme/colors.css);
+@import url(./theme/button.css);
+@import url(./theme/text-input.css);
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

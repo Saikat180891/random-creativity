@@ -1,0 +1,16 @@
+.FileUpload {
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.FileUpload input[type="file"] {
+    opacity: 0;
+    font-size: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}

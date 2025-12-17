@@ -1,8 +1,20 @@
+import { Outlet } from "react-router";
+// import { Navbar } from "./components/Navbar";
+// import { navMenu } from "./app-constants/nav-menu";
+import "./App.css";
+import { Settings } from "./components/Settings";
+
 function App() {
   return (
-    <>
-      <h1 className="text-3xl font-bold">Hello Saikat!</h1>
-    </>
+    <div className="App">
+      {/* <div>
+        <Navbar items={navMenu} />
+      </div> */}
+      <div>
+        <Settings />
+        <Outlet />
+      </div>
+    </div>
   );
 }
 

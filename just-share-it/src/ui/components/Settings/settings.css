@@ -1,0 +1,43 @@
+.Settings {
+    padding: 1rem;
+    background: #001529;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Settings div:first-child {
+    display: flex;
+    align-items: center;
+}
+
+.Settings div:first-child .ModeSelector{
+    display: flex;
+    flex-direction: column;
+    margin-right: 1rem;
+}
+
+.Settings div:first-child .ModeSelector span {
+    display: block;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.Settings .SettingsForm {
+    display: flex;
+    gap: 1rem;
+    align-items: end;
+}
+
+.Settings .SettingsForm .FormGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.Settings .RightControls {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+}
